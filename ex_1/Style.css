@@ -30,16 +30,21 @@
             padding:3em;
 
             & #EX1_Form{
-                Background-color:var(--Emph-color);
-
                 
+
+
 
                 & fieldset{
                     padding:2em;
+                    Background-color:var(--Emph-color);
                     display:grid;
                     grid-template-columns: 1fr 1fr;
                     grid-template-rows:1fr 2fr 1fr 2fr 1fr 2fr 1fr;
                     border-radius:1em;
+                    & input{
+                        padding:0.5em;
+                        border-radius:1em;
+                    }
                 }
             }
         }
