@@ -1,0 +1,48 @@
+:root{
+--BG-color:rgb(231, 233, 220);
+--FG-color:rgb(49, 121, 81);
+--Font-color:rgb(15, 56, 33);
+--IFont-color:rgb(229, 233, 217);
+--Emph-color:rgb(210, 83, 40);
+--Focus-color:rgb(255, 219, 57);
+--Special-color:rgb(255, 94, 148);
+}
+
+
+*{
+    margin:0;
+    padding:0;
+    &header{
+        display:none;
+        background-color:var(--FG-color);
+        &*{
+            color:var(--IFont-color);
+            font-family:Helvetica,sans-serif;
+        }
+    }
+    & main{
+        background-color:var(--BG-color);
+        & *{
+            color:var(--Font-color);
+            font-family:Helvetica,sans-serif;
+        }
+        & #EX1_Container{
+            padding:3em;
+
+            & #EX1_Form{
+                Background-color:var(--Emph-color);
+
+                
+
+                & fieldset{
+                    padding:2em;
+                    display:grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows:1fr 2fr 1fr 2fr 1fr 2fr 1fr;
+                    border-radius:1em;
+                }
+            }
+        }
+
+    }
+}
