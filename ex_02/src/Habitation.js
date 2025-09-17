@@ -7,7 +7,7 @@ class Habitation{
     }
     superficie() {
         let result = this.largeur * this.longueur * this.Nb_etage;
-        console.log(`L'habitation nommée ${this.nom}, possèdant ${this.Nb_etage} étage${this.Nb_etage>1?"s":""}, a une superficie totale de ${result}`)
+        console.log(`L'habitation nommée ${this.nom}, possèdant ${this.Nb_etage} étage${this.Nb_etage>1?"s":""}, a une superficie totale de ${result} m2`)
         return result;
     }
 }
