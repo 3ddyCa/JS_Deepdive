@@ -3,7 +3,7 @@ import Imc from "./imc.js"
 let list = [
     new Imc("Sebastien Chabal", 135,1.7),
     new Imc("Escaladeuse", 45,1.68),
-    new Imc("JOJO", 300,2),
+    new Imc("JOJO", 300,2.0),
     new Imc("Gontrand", 90, 1.75),
     new Imc("Colonel Clock", 200, 1.75),
     new Imc("Josiane de la Vega", 99, 1.55),
@@ -45,7 +45,7 @@ function pullItem(liste){
 
 function display(list){
     let calcul = imCalc(list[1],list[2]);
-    console.log( `L'utilisateur ${list[0]} mesurant ${list[2]}m et pesant ${list[1]}kg a un indice de masse corporel de ${calcul} .`);
+    console.log( `L'utilisateur ${list[0]} mesurant ${list[2]}m et pesant ${list[1]}kg a un indice de masse corporel de ${Math.round(calcul*100)/100} .`);
         // for(let i = 0 ; i< 4 ; i++){
         //     liste.push()
         // }
