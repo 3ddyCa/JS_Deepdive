@@ -28,7 +28,7 @@ let list = [
 // list.push(new Imc("Josiane de la Vega", 99, 1.55);
 
 function imCalc(poids,taille){
-    return poids/(taille*2);
+    return poids/(taille*taille);
 }
 
 function pullItem(liste){
